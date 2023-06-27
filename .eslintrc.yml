@@ -10,6 +10,8 @@ rules:
   'import/extensions': 'off'
 ignorePatterns:
   - 'dist/*'
+  - 'project/code/dist/*'
+  - '/project/code/dist/*'
 plugins:
   - 'import'
 overrides:
