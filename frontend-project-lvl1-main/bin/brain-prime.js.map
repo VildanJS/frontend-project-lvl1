@@ -1,0 +1,1 @@
+{"version":3,"file":"brain-prime.js","names":["startPrimeGame","require"],"sources":["brain-prime.ts"],"sourcesContent":["#!/usr/bin/env node\nconst { startPrimeGame } = require('../dist/prime.js');\n\nstartPrimeGame();\n"],"mappings":"AAAA;AACA,MAAM;EAAEA;AAAe,CAAC,GAAGC,OAAO,CAAC,kBAAkB,CAAC;AAEtDD,cAAc,CAAC,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"brain-even.js","names":["startEvenGame","require"],"sources":["brain-even.ts"],"sourcesContent":["#!/usr/bin/env node\nconst { startEvenGame } = require('../dist/even.js');\n\nstartEvenGame();\n"],"mappings":"AAAA;AACA,MAAM;EAAEA;AAAc,CAAC,GAAGC,OAAO,CAAC,iBAAiB,CAAC;AAEpDD,aAAa,CAAC,CAAC"}

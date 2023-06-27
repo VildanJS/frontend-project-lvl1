@@ -1,0 +1,1 @@
+{"version":3,"file":"brain-gcd.js","names":["startGcdGame","require"],"sources":["brain-gcd.ts"],"sourcesContent":["#!/usr/bin/env node\nconst { startGcdGame } = require('../dist/gcd.js');\n\nstartGcdGame();\n"],"mappings":"AAAA;AACA,MAAM;EAAEA;AAAa,CAAC,GAAGC,OAAO,CAAC,gBAAgB,CAAC;AAElDD,YAAY,CAAC,CAAC"}
