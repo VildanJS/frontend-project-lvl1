@@ -1,1 +1,0 @@
-{"version":3,"file":"brain-progression.js","names":["startProgressionGame","require"],"sources":["brain-progression.ts"],"sourcesContent":["#!/usr/bin/env node\nconst startProgressionGame = require('../dist/progression.js');\n\nstartProgressionGame();\n"],"mappings":"AAAA;AACA,MAAMA,oBAAoB,GAAGC,OAAO,CAAC,wBAAwB,CAAC;AAE9DD,oBAAoB,CAAC,CAAC"}

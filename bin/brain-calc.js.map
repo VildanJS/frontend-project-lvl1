@@ -1,1 +1,0 @@
-{"version":3,"file":"brain-calc.js","names":["startCalcGame","require"],"sources":["brain-calc.ts"],"sourcesContent":["#!/usr/bin/env node\nconst { startCalcGame } = require('../dist/calc.js');\n\nstartCalcGame();\n"],"mappings":"AAAA;AACA,MAAM;EAAEA;AAAc,CAAC,GAAGC,OAAO,CAAC,iBAAiB,CAAC;AAEpDD,aAAa,CAAC,CAAC"}

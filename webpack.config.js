@@ -9,6 +9,7 @@ module.exports = {
     gcd: path.resolve(__dirname, 'src', 'games', 'gcd.ts'),
     prime: path.resolve(__dirname, 'src', 'games', 'prime.ts'),
     progression: path.resolve(__dirname, 'src', 'games', 'progression.ts'),
+    greeting: path.resolve(__dirname, 'src', 'games', 'greeting.ts'),
   },
   output: {
     library: {
