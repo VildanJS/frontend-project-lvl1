@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   target: 'node',
   entry: {
     calc: path.resolve(__dirname, 'src', 'games', 'calc.ts'),
