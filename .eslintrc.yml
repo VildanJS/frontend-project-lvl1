@@ -11,7 +11,6 @@ rules:
 ignorePatterns:
   - 'dist/*'
   - 'project/code/dist/*'
-  - '/project/code/dist/*'
 plugins:
   - 'import'
 overrides:
