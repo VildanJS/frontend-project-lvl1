@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const {
-  startPrimeGame
+  startPrimeGame,
 } = require('../dist/prime.js');
-startPrimeGame();
 
-//# sourceMappingURL=brain-prime.js.map
+startPrimeGame();

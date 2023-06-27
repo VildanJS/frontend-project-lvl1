@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const {
-  startCalcGame
+  startCalcGame,
 } = require('../dist/calc.js');
-startCalcGame();
 
-//# sourceMappingURL=brain-calc.js.map
+startCalcGame();

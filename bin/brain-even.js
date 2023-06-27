@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const {
-  startEvenGame
+  startEvenGame,
 } = require('../dist/even.js');
-startEvenGame();
 
-//# sourceMappingURL=brain-even.js.map
+startEvenGame();

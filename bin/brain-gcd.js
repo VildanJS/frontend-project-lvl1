@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const {
-  startGcdGame
+  startGcdGame,
 } = require('../dist/gcd.js');
-startGcdGame();
 
-//# sourceMappingURL=brain-gcd.js.map
+startGcdGame();
