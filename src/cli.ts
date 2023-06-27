@@ -13,10 +13,11 @@ export function randomInteger(min: number, max: number): number {
 }
 
 export const isPrime = (num: number): boolean => {
-  for (let i = 2; i < Math.sqrt(num); i += 1) {
-    if (num % i === 0) {
-      return false;
-    }
+  if (num <= 1) return false;
+  if (num % 2 === 0 && num > 2) return false;
+  const s = Math.sqrt(num);
+  for (let i = 3; i <= s; i += 2) {
+    if (num % i === 0) return false;
   }
-  return num > 1;
+  return true;
 };
