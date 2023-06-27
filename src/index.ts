@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greeting } from './cli.js';
+import { greeting } from './cli';
 
 // eslint-disable-next-line import/prefer-default-export
 export const startGame = (game: () => [result: string, question: string], rule: string): void => {

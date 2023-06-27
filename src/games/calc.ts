@@ -1,5 +1,5 @@
-import { randomInteger } from '../cli.js';
-import { startGame } from '../index.js';
+import { randomInteger } from '../cli';
+import { startGame } from '../index';
 
 const RULE = 'What is the result of the expression?';
 

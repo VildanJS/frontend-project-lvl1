@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/cli.js":
+/***/ "./src/cli.ts":
 /*!********************!*\
-  !*** ./src/cli.js ***!
+  !*** ./src/cli.ts ***!
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   greeting: () => (/* binding */ greeting),\n/* harmony export */   isPrime: () => (/* binding */ isPrime),\n/* harmony export */   randomInteger: () => (/* binding */ randomInteger)\n/* harmony export */ });\n/* harmony import */ var readline_sync__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! readline-sync */ \"./node_modules/readline-sync/lib/readline-sync.js\");\n\nconst greeting = () => {\n  console.log('Welcome to the Brain Games!');\n  const userName = readline_sync__WEBPACK_IMPORTED_MODULE_0__.question('May I have your name? ');\n  console.log(`Hello ${userName}!`);\n  return userName;\n};\nfunction randomInteger(min, max) {\n  const rand = min + Math.random() * (max + 1 - min);\n  return Math.floor(rand);\n}\nconst isPrime = num => {\n  if (num === 1) {\n    return false;\n  }\n  const m = Math.sqrt(num);\n  for (let i = 2; i < m; i += 1) {\n    if (num % i === 0) {\n      return false;\n    }\n  }\n  return true;\n};\n\n//# sourceURL=webpack://@hexlet/code/./src/cli.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   greeting: () => (/* binding */ greeting),\n/* harmony export */   isPrime: () => (/* binding */ isPrime),\n/* harmony export */   randomInteger: () => (/* binding */ randomInteger)\n/* harmony export */ });\n/* harmony import */ var readline_sync__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! readline-sync */ \"./node_modules/readline-sync/lib/readline-sync.js\");\n\nconst greeting = () => {\n  console.log('Welcome to the Brain Games!');\n  const userName = readline_sync__WEBPACK_IMPORTED_MODULE_0__.question('May I have your name? ');\n  console.log(`Hello, ${userName}!`);\n  return userName;\n};\nfunction randomInteger(min, max) {\n  const rand = min + Math.random() * (max + 1 - min);\n  return Math.floor(rand);\n}\nconst isPrime = num => {\n  if (num === 1) {\n    return false;\n  }\n  const m = Math.sqrt(num);\n  for (let i = 2; i < m; i += 1) {\n    if (num % i === 0) {\n      return false;\n    }\n  }\n  return true;\n};\n\n//# sourceURL=webpack://@hexlet/code/./src/cli.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   greeting: () => (/* reexport safe */ _cli_js__WEBPACK_IMPORTED_MODULE_0__.greeting)\n/* harmony export */ });\n/* harmony import */ var _cli_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../cli.js */ \"./src/cli.js\");\n\n\n//# sourceURL=webpack://@hexlet/code/./src/games/greeting.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   greeting: () => (/* reexport safe */ _cli__WEBPACK_IMPORTED_MODULE_0__.greeting)\n/* harmony export */ });\n/* harmony import */ var _cli__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../cli */ \"./src/cli.ts\");\n\n\n//# sourceURL=webpack://@hexlet/code/./src/games/greeting.ts?");
 
 /***/ }),
 

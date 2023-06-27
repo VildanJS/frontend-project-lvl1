@@ -1,5 +1,5 @@
-import { startGame } from '../index.js';
-import { randomInteger } from '../cli.js';
+import { startGame } from '../index';
+import { randomInteger } from '../cli';
 
 const RULE = 'What number is missing in the progression?';
 
