@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/VildanJS/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/VildanJS/frontend-project-lvl1/actions)
 
 ### Code Climate Maintainability:
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b635f0e6af4ca450ef57/test_coverage)](https://codeclimate.com/github/VildanJS/frontend-project-lvl1/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b635f0e6af4ca450ef57/maintainability)](https://codeclimate.com/github/VildanJS/frontend-project-lvl1/maintainability)
 
 **the Even Game**
 [![asciicast](https://asciinema.org/a/YbfDdVuZRM12qyhAieZ05Gsou.svg)](https://asciinema.org/a/YbfDdVuZRM12qyhAieZ05Gsou)
