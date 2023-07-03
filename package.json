@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/VildanJS/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/VildanJS/frontend-project-lvl1/actions)",
+  "description": "Набор консольных игр под общим названием Brain-games",
   "bin": {
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
