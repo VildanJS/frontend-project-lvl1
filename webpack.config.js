@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   target: 'node',
+  watch: true,
   entry: {
     calc: path.resolve(__dirname, 'src', 'games', 'calc.ts'),
     even: path.resolve(__dirname, 'src', 'games', 'even.ts'),

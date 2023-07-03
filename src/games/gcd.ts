@@ -18,7 +18,8 @@ export const gcdGame = (): GameResult => {
 
   const question = `${operand1} ${operand2}`;
 
-  return [String(x), question];
+  const strResult = String(x);
+  return [strResult, question];
 };
 
 export const startGcdGame = () => startGame(gcdGame, RULE);

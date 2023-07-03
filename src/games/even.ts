@@ -7,7 +7,9 @@ const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 export const evenGame = (): GameResult => {
   const question = getRandomInRange(1, 100);
   const result = question % 2 === 0 ? 'yes' : 'no';
-  return [result, String(question)];
+
+  const strQuestion = String(question);
+  return [result, strQuestion];
 };
 
 export const startEvenGame = () => startGame(evenGame, RULE);

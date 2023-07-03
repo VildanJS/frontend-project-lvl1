@@ -1,16 +1,17 @@
 import readlineSync from 'readline-sync';
 import { greeting } from './cli';
+import { GameResult } from './games/types';
 
-// eslint-disable-next-line import/prefer-default-export
-export const startGame = (game: () => [result: string, question: string], rule: string): void => {
+const roundsCount = 3;
+
+export const startGame = (game: () => GameResult, rule: string): void => {
   const userName = greeting();
   console.log(rule);
 
   const CONGRATS = `Congratulations, ${userName}!`;
   const CORRECT = 'Correct!';
 
-  let count = 3;
-  while (count > 0) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const [result, question] = game();
 
     const QUESTION = `Question: ${question}`;
@@ -23,8 +24,9 @@ export const startGame = (game: () => [result: string, question: string], rule: 
       console.log(WRONG);
       return;
     }
+
     console.log(CORRECT);
-    if (count === 1) console.log(CONGRATS);
-    count -= 1;
   }
+
+  console.log(CONGRATS);
 };
