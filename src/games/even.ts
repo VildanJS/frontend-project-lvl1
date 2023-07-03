@@ -1,11 +1,11 @@
-import { randomInteger } from '../cli';
 import { startGame } from '../index';
+import { GameResult } from './types';
+import { getRandomInRange } from '../utils';
 
 const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-// eslint-disable-next-line import/prefer-default-export
-export const evenGame = (): [result: string, question: string] => {
-  const question = randomInteger(1, 100);
+export const evenGame = (): GameResult => {
+  const question = getRandomInRange(1, 100);
   const result = question % 2 === 0 ? 'yes' : 'no';
   return [result, String(question)];
 };

@@ -1,15 +1,15 @@
-import { randomInteger } from '../cli';
 import { startGame } from '../index';
+import { GameResult } from './types';
+import { getRandomInRange } from '../utils';
 
 const RULE = 'What is the result of the expression?';
 
-// eslint-disable-next-line import/prefer-default-export
-export const calcGame = (): [result: string, question: string] => {
+export const calcGame = (): GameResult => {
   const operators = ['+', '-', '*'];
-  const index = randomInteger(0, 2);
+  const index = getRandomInRange(0, 2);
   const operator = operators[index];
-  const operand1 = randomInteger(1, 10);
-  const operand2 = randomInteger(1, 10);
+  const operand1 = getRandomInRange(1, 10);
+  const operand2 = getRandomInRange(1, 10);
 
   const question = `${operand1} ${operator} ${operand2}`;
 

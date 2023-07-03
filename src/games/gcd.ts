@@ -1,11 +1,12 @@
 import { startGame } from '../index';
-import { randomInteger } from '../cli';
+import { GameResult } from './types';
+import { getRandomInRange } from '../utils';
 
 const RULE = 'Find the greatest common divisor of given numbers.';
 
-export const gcdGame = (): [result: string, question: string] => {
-  const operand1 = randomInteger(1, 100);
-  const operand2 = randomInteger(1, 100);
+export const gcdGame = (): GameResult => {
+  const operand1 = getRandomInRange(1, 100);
+  const operand2 = getRandomInRange(1, 100);
 
   let y = operand2; let x = operand1;
 

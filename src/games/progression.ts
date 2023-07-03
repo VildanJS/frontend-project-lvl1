@@ -1,13 +1,14 @@
 import { startGame } from '../index';
-import { randomInteger } from '../cli';
+import { GameResult } from './types';
+import { getRandomInRange } from '../utils';
 
 const RULE = 'What number is missing in the progression?';
 
-export function progressionGame(): [result: string, question: string] {
-  const number = randomInteger(1, 100);
-  const step = randomInteger(1, 10);
+export function progressionGame(): GameResult {
+  const number = getRandomInRange(1, 100);
+  const step = getRandomInRange(1, 10);
   const progression: string[] = [];
-  const hiddenIndex = randomInteger(0, 9);
+  const hiddenIndex = getRandomInRange(0, 9);
 
   for (let i = 1; i < 11; i += 1) {
     const n = number + (i - 1) * step;
