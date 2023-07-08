@@ -25,10 +25,9 @@ export const calcGame = (): GameResult => {
 
   const question = `${operand1} ${operator} ${operand2}`;
 
-  const result = calculation(operand1, operand2, operator);
-  const strResult = String(result);
+  const answer = String(calculation(operand1, operand2, operator));
 
-  return [strResult, question];
+  return [answer, question];
 };
 
 export const startCalcGame = () => startGame(calcGame, RULE);

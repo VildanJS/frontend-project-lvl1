@@ -1,1 +1,1 @@
-export type GameResult = [result: string, question: string];
+export type GameResult = [answer: string, question: string];

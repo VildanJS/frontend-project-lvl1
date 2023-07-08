@@ -15,11 +15,11 @@ export const isPrime = (num: number): boolean => {
 };
 
 export const primeGame = (): GameResult => {
-  const question = getRandomInRange(1, 100);
-  const result = isPrime(question) ? 'yes' : 'no';
+  const randomInRange = getRandomInRange(1, 100);
+  const answer = isPrime(randomInRange) ? 'yes' : 'no';
 
-  const strQuestion = String(question);
-  return [result, strQuestion];
+  const question = String(randomInRange);
+  return [answer, question];
 };
 
 export const startPrimeGame = () => startGame(primeGame, RULE);

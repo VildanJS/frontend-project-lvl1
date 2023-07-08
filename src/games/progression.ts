@@ -15,12 +15,12 @@ export function progressionGame(): GameResult {
     progression.push(String(n));
   }
 
-  const result = String(progression[hiddenIndex]);
+  const answer = String(progression[hiddenIndex]);
 
   progression[hiddenIndex] = '..';
   const question = progression.join(' ');
 
-  return [result, question];
+  return [answer, question];
 }
 
 export const startProgressionGame = () => startGame(progressionGame, RULE);
